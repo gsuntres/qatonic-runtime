@@ -1,0 +1,44 @@
+{
+
+  "env": {
+    "browser": false,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+
+  "globals": {
+    "assert": true
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    },
+    "sourceType": "module"
+  },
+
+  "extends": [
+    "eslint:recommended"
+  ],
+
+  "rules": {
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "object-curly-newline": [
+      "warn", {
+        "ObjectExpression": { "multiline": true, "minProperties": 2 },
+        "ObjectPattern": { "multiline": true, "minProperties": 2 }
+      }
+    ]
+  }
+}

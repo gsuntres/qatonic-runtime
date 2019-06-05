@@ -1,0 +1,39 @@
+{
+  "name": "@qatonic/runtime",
+  "version": "0.0.2",
+  "description": "QA Tonic Runtime",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node_modules/eslint/bin/eslint.js index.js src/**/*.js tests/**/*.js",
+    "test": "npm run-script lint; mocha tests --require chai/register-assert --require sinon --reporter dot"
+  },
+  "author": {
+    "name": "George Suntres",
+    "email": "gsuntres@gmail.com"
+  },
+  "license": "MIT",
+  "files": [
+    "src",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gsuntres/qatonic-runtime.git"
+  },
+  "dependencies": {
+    "@qatonic/core": "^0.0.1",
+    "@qatonic/plugin-http": "^0.0.1",
+    "lodash": "^4.17.11",
+    "simple-json-template": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "esdoc": "^1.1.0",
+    "esdoc-node": "^1.0.3",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^5.15.3",
+    "mocha": "^5.2.0",
+    "mock-fs": "4.5.0",
+    "sinon": "^6.0.1"
+  }
+}

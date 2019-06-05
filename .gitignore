@@ -1,0 +1,9 @@
+node_modules
+tmp
+docs
+
+# mac
+.DS_Store
+dump.rdb
+
+npm-debug.log
